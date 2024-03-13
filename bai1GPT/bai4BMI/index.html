@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Chỉ Số BMI</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tính Chỉ Số BMI</h1>
+        <div class="form-group">
+            <label for="can-nang">Nhập cân nặng?:</label>
+            <input type="number" id="can-nang" required>
+        </div>
+        <div class="form-group">
+            <label for="chieu-cao">Nhập chiều cao?:</label>
+            <input type="number" step="0.01" id="chieu-cao" required>
+        </div>
+        <div class="form-group">
+            <label for="tuoi">Chọn loại tuổi?</label>
+            <select id="tuoi">
+                <option value="trung-nien">Trung niên</option>
+                <option value="gia-lon-tuoi">Già, lớn tuổi</option>
+            </select>
+        </div>
+        <button onclick="tinhBMI()">Tính</button>
+        <div id="ket-qua"></div>
+        <p><b>Giải thích:</b></p>
+        <p>Chỉ số BMI được tính bằng cách chia cân nặng (kg) cho bình phương chiều cao (mét) theo công thức:</p>
+        <div id="cong-thuc">BMI = W (kg) / (H (m))<sup>2</sup></div>
+        <p>Với:</p>
+        <ul>
+            <li>W là cân nặng</li>
+            <li>H là chiều cao</li>
+        </ul>
+        <p><b>Phân loại BMI</b></p>
+        <table id="phan-loai">
+            <tr>
+                <th>BMI</th>
+                <th>Phân loại</th>
+            </tr>
+            <tr>
+                <td>Dưới 18,5</td>
+                <td>Thiếu cân</td>
+            </tr>
+            <tr>
+                <td>18,5-24,9</td>
+                <td>Bình thường</td>
+            </tr>
+            <tr>
+                <td>25,0-29,9</td>
+                <td>Thừa cân</td>
+            </tr>
+            <tr>
+                <td>30,0-34,9</td>
+                <td>Béo phì độ I</td>
+            </tr>
+            <tr>
+                <td>35,0-39,9</td>
+                <td>Béo phì độ II</td>
+            </tr>
+            <tr>
+                <td>Trên 40,0</td>
+                <td>Béo phì độ III</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

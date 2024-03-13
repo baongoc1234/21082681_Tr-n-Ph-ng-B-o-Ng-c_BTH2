@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đóng góp ý kiến sản phẩm</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 250px;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Đóng góp ý kiến sản phẩm</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="input-name">Họ và tên:</label>
+                <input type="text" id="input-name" required>
+            </div>
+            <div class="input-group">
+                <label for="input-card">Mã thẻ:</label>
+                <input type="text" id="input-card" required>
+            </div>
+            <div class="input-group">
+                <label for="input-phone">Số điện thoại:</label>
+                <input type="tel" id="input-phone" required>
+            </div>
+            <div class="input-group">
+                <label for="input-email">Email:</label>
+                <input type="email" id="input-email" required>
+            </div>
+            <div class="input-group">
+                <label for="input-customer-type">Loại khách hàng:</label>
+                <select id="input-customer-type" required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="input-invoice">Mã hoá đơn:</label>
+                <input type="text" id="input-invoice">
+            </div>
+            <div class="input-group">
+                <label for="input-description">Chi tiết mô tả:</label>
+                <textarea id="input-description" required></textarea>
+            </div>
+            <button class="btn" type="submit">Gửi ý kiến</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc I</title>
+</head>
+<body>
+    <center>
+    <div>
+        <h1>GIẢI PHƯƠNG TRÌNH BẬC I</h1>
+        <input type="number" placeholder="Hệ số a" id="a" /><br>
+        <input type="number" placeholder="Hệ số b" id="b" /><br>
+        <button onclick="giaiPhuongTrinh()">Giải phương trình</button>
+        <P>KẾT QUẢ</P>
+        <div id="ketqua"></div>
+    </div>
+    </center>
+    <script>
+        function giaiPhuongTrinh() {
+            // Lấy giá trị từ các ô nhập
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+
+            // Giải phương trình
+            var x = -b / a;
+
+            // Hiển thị kết quả
+            document.getElementById("ketqua").innerHTML = "Nghiệm x = " + x;
+        }
+    </script>
+</body>
+</html>
